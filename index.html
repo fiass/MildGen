@@ -6,29 +6,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="bulma/css/bulma.css" rel="stylesheet" type="text/css">
 	<link href="fonts/css/all.css" rel="stylesheet" type="text/css">
-   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+ <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <style>
   html *
   {
     font-family: ARIAL;
+  }
+  body {
+    background-color: #002428;
+  }
+  .navbar-link:not(.is-arrowless)::after {
+    border-color:  #f19296;
+    margin-top: -0.375em;
+    right: 1.125em;
+  }
+  .hero.is-info .title {
+    color: #f19296;
+}
+  .navbar-item {
+    color: rgba(255,255,255,0.822);
+  }
+  .button.is-info {
+   color: #f19296;
+   background-color: #002428;
  }
- body {
-  background-color: #002428;
-}
-.navbar-link:not(.is-arrowless)::after {
-  border-color:  #f19296;
-  margin-top: -0.375em;
-  right: 1.125em;
-}
-.navbar-item {
-  color: rgba(255,255,255,0.822);
-}
-.button.is-info {
- color: #f19296;
- background-color: #002428;
-}
-.button.is-info:hover, .button.is-info.is-hovered {
+ .button.is-info:hover, .button.is-info.is-hovered {
   color: #002428;
   background-color: #f19296;
   border-color: transparent;
@@ -68,6 +71,10 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 .navbar-dropdown.is-boxed {
  background-color: #002428;
+}
+.footer {
+    background-color: #f19290;
+    padding: 1rem 1.5rem 1rem;
 }
 </style>
 <body>
@@ -127,7 +134,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
               </a>
             </p>
             <p class="control">
-              <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.4/bulma-0.9.4.zip" >
+              <a class="button is-primary" href="https://vkplay.ru/play/developer/mildgen/" >
                 <span class="icon">
                   <i class="fas fa-store"></i>
                 </span>
@@ -149,5 +156,58 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
       </p>
     </div>
   </section>
+  <div class="block"></div>
+  <div class="columns is-gapless is-desktop">
+    <div class="column">
+      <section class="hero is-medium  is-info" style=" background-image:url('images/left.png'); background-color: transparent; background-size: cover; background-repeat:no-repeat;">
+
+        <div class="hero-body has-text-left">
+          <p class="title">
+            Промо 1
+          </p>
+          <p class="subtitle">
+            Описание
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="column is-one-quarter">
+      <section class="hero is-medium  is-warning" style="background-color: transparent; background-size: cover; background-repeat:no-repeat;">
+
+      </section>
+    </div>
+  </div>
+
+   <div class="columns is-gapless is-desktop">
+    <div class="column is-one-quarter">
+      <section class="hero is-medium  is-warning" style="background-color: transparent; background-size: contain; background-repeat:no-repeat;">
+        
+      </section>
+    </div>
+    <div class="column">
+      <section class="hero is-medium  is-info" style=" background-image:url('images/right.png'); background-color: transparent; background-size: cover; background-repeat:no-repeat;">
+       
+        <div class="hero-body has-text-right">
+          <p class="title">
+            Промо 2
+          </p>
+          <p class="subtitle">
+            Описание
+          </p>
+        </div>
+      </section>
+    </div>
+    
+  </div>
+
 </body>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>MildGen</strong> by <a href="https://fiass.github.io/Visit-Card/#home">Roma Nightmare</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+  </div>
+</footer>
 </html>
