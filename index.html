@@ -14,7 +14,19 @@
     font-family: ARIAL;
   }
   body {
+    background-image:url('images/Concept/BG.jpg'); background-color: transparent; background-size: cover; background-repeat:no-repeat;
     background-color: #002428;
+  }
+  ::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+  ::-webkit-scrollbar-track-piece  {
+    background-color: #000000d9;
+  }
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 1px;
+    background-color: #454444db;
   }
   .navbar-link:not(.is-arrowless)::after {
     border-color:  #f19296;
@@ -23,13 +35,16 @@
   }
   .hero.is-info .title {
     color: #f19296;
-}
+  }
   .navbar-item {
     color: rgba(255,255,255,0.822);
   }
+  .navbar-burger {
+    color: white;
+  }
   .button.is-info {
    color: #f19296;
-   background-color: #002428;
+   background-color: #535353c2;
  }
  .button.is-info:hover, .button.is-info.is-hovered {
   color: #002428;
@@ -38,10 +53,10 @@
 }
 .button.is-primary {
   color: #f19296;
-  background-color: #002428;
+  background-color: #535353c2;
 }
 .hero.is-primary {
-  background-color: #353535;
+  background-color: #000000b0;
   color: #fff;
 }
 .hero.is-primary .title {
@@ -67,14 +82,14 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   color: rgba(255,255,255,0.822);
 }
 .navbar.is-transparent {
-  background-color: #002428;
+  background-color: #454444db;
 }
 .navbar-dropdown.is-boxed {
  background-color: #002428;
 }
 .footer {
-    background-color: #f19290;
-    padding: 1rem 1.5rem 1rem;
+  background-color: #00000033;
+  padding: 1rem 1.5rem 1rem;
 }
 </style>
 <body>
@@ -157,56 +172,25 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
     </div>
   </section>
   <div class="block"></div>
-  <div class="columns is-gapless is-desktop">
-    <div class="column">
-      <section class="hero is-medium  is-info" style=" background-image:url('images/left.png'); background-color: transparent; background-size: cover; background-repeat:no-repeat;">
 
-        <div class="hero-body has-text-left">
-          <p class="title">
-            Промо 1
-          </p>
-          <p class="subtitle">
-            Описание
-          </p>
-        </div>
-      </section>
+  <section class="hero is-large is-info" style="background-color: transparent;">
+    <div class="hero-body">
+      <p class="title">
+        Концепция студии
+      </p>
+      <p class="subtitle">
+        Название «MildGen», что означает «Mild Generation». Идея состоит в том, чтобы представить новое поколение геймеров, которым нравятся спокойные и успокаивающие игры. Логотип включает в себя мягкие и мятные цвета, чтобы отразить чувство спокойствия и расслабления. Игра слов на «MildGen» означает, что студия сосредоточена на разработке игр, подходящих для блоггеров, которые ищут более непринужденный игровой опыт.
+      </p>
     </div>
-    <div class="column is-one-quarter">
-      <section class="hero is-medium  is-warning" style="background-color: transparent; background-size: cover; background-repeat:no-repeat;">
-
-      </section>
-    </div>
-  </div>
-
-   <div class="columns is-gapless is-desktop">
-    <div class="column is-one-quarter">
-      <section class="hero is-medium  is-warning" style="background-color: transparent; background-size: contain; background-repeat:no-repeat;">
-        
-      </section>
-    </div>
-    <div class="column">
-      <section class="hero is-medium  is-info" style=" background-image:url('images/right.png'); background-color: transparent; background-size: cover; background-repeat:no-repeat;">
-       
-        <div class="hero-body has-text-right">
-          <p class="title">
-            Промо 2
-          </p>
-          <p class="subtitle">
-            Описание
-          </p>
-        </div>
-      </section>
-    </div>
-    
-  </div>
-
+  </section>
 </body>
+
 <footer class="footer">
-  <div class="content has-text-centered">
-    <p>
-      <strong>MildGen</strong> by <a href="https://fiass.github.io/Visit-Card/#home">Roma Nightmare</a>. The source code is licensed
-      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+  <div class="content has-text-centered" style="color:rgba(255,255,255,0.5)">
+    <p >
+      <strong style="color:rgba(255,255,255,0.5)">MildGen</strong> by <a href="https://fiass.github.io/Visit-Card/#home" style="color:#f19296">Roma Nightmare</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php" style="color:#f19296">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="color:#f19296">CC BY NC SA 4.0</a>.
     </p>
   </div>
 </footer>
